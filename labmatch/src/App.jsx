@@ -833,7 +833,7 @@ export default function LabMatch() {
                   {FACULTY.length} faculty from the{" "}
                   <a href={SOURCE_URL} target="_blank" rel="noopener noreferrer">TTU Psychological Sciences labs page</a>
                   {store.added.length > 0 && `, plus ${store.added.length} added in LabMatch`}.{" "}
-                  {lc ? `Last checked ${formatDay(lc.checkedAt)}.` : `Copied ${formatDay(BASE_COPIED)}.`} The page is checked automatically every week.
+                  {lc ? `Last checked ${formatDay(lc.checkedAt)}.` : `Copied ${formatDay(BASE_COPIED)}.`} The page is checked automatically every day.
                 </p>
                 <button className="secondary" onClick={runCheck} disabled={checking}>
                   {checking ? "Checking the page…" : "Check page for changes"}
