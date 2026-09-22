@@ -1,4 +1,4 @@
-// Runs automatically once a week to look for faculty changes on the TTU labs page.
+// Runs automatically once a day to look for faculty changes on the TTU labs page.
 import { runPageCheck } from "../lib/check.mjs";
 
 export default async () => {
@@ -10,4 +10,4 @@ export default async () => {
   }
 };
 
-export const config = { schedule: "@weekly" };
+export const config = { schedule: "@daily" };
